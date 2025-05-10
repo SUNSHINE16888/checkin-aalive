@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Điểm danh AALIVE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Form điểm danh AALIVE</h2>
+    <form id="attendanceForm">
+      <label>Họ tên:</label>
+      <input type="text" id="name" required>
+
+      <label>Ca làm:</label>
+      <select id="shift" required>
+        <option value="">-- Chọn ca --</option>
+        <option value="Ca sáng">Ca sáng</option>
+        <option value="Ca chiều">Ca chiều</option>
+        <option value="Ca tối">Ca tối</option>
+      </select>
+
+      <label>Ảnh minh chứng (tay/cảnh làm việc):</label>
+      <input type="file" id="photo" accept="image/*" required>
+
+      <label>Ghi chú:</label>
+      <textarea id="note" rows="3"></textarea>
+
+      <button type="submit">Gửi điểm danh</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
